@@ -1,9 +1,9 @@
 sudo: required
 language: generic
 services:
-    - docker build -t harishindalkar/docker-react-travisCI-test -f Dockerfile.dev .
+    - docker build -t harishindalkar/docker-react-travisci-test -f Dockerfile.dev .
     
 script:
     # - docker run -e CI=true harishindalkar/docker-react-travisCI-test npm run test
 
-    - docker run harishindalkar/docker-react-travisCI-test npm run test -- --coverage
+    - docker run harishindalkar/docker-react-travisci-test npm run test -- --coverage
