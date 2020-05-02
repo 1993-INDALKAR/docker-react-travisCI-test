@@ -1,0 +1,7 @@
+sudo: required
+language: generic
+services:
+    - docker build -t harishindalkar/docker-react-travisCI-test -f Dockerfile.dev .
+    
+script:
+    - docker run -e CI=true harishindalkar/docker-react-travisCI-test npm run test
