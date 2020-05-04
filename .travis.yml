@@ -11,8 +11,7 @@ before_install:
     
 script:
     - docker run -e CI=true harishindalkar/docker-react-travisci-test npm run test
-
-    # - docker run harishindalkar/docker-react-travisci-test npm run test -- --coverage
+    
 
 deploy:
     provider: elasticbeanstalk 
